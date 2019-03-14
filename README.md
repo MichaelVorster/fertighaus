@@ -7,4 +7,4 @@ A small web server that allows for the upload of a simple csv file
 - Python libraries listed in `requirements.txt`
 
 ## Testing
-- Use `records.csv` as possible file to test uploading and poasting
+- Use `records.csv` as possible file to test uploading and posting
