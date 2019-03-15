@@ -6,7 +6,6 @@ import requests
 from werkzeug.utils import secure_filename
 
 
-ALLOWED_EXTENSIONS = set(['csv'])
 records = []
 
 
@@ -16,7 +15,7 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 def allowed_filetype(filename):
     return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+           filename.rsplit('.', 1)[1].lower() == 'csv'
 
 
 def correct_filetype_and_fieldnames(filename):
@@ -47,6 +46,7 @@ def read_csv(filename):
                     dict(zip(headers, row))
                 )
             line += 1
+    csvfile.close()
 
     json_records = {'records': new_records}
 

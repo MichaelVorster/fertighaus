@@ -8,3 +8,8 @@ A small web server that allows for the upload of a simple csv file
 
 ## Testing
 - Use `records.csv` as possible file to test uploading and posting
+
+
+## To run code
+- In the command line run `./app.py`
+- Default hosting at `http://127.0.0.1:5000/`
