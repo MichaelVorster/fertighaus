@@ -1,6 +1,7 @@
 # Small Web Server
 
-A small web server that allows for the upload of a simple csv file
+- A small web server that allows for the upload of a simple csv file
+- Or posting CSV file to API endpoint at `http://127.0.0.1:5000/post-csv/`
 
 ## Requirements
 - Python 3
